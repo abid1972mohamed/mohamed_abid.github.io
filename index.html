@@ -1,10 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>My GitHub Pages site is officially live.</p>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional website of Dr Mohamed Abid — intelligent sensing systems, industrial AI, nanotechnology and data-driven operations.">
+<title>Dr Mohamed Abid | Research & Intelligent Sensing Systems</title>
+<style>
+:root{
+  --ink:#172333; --muted:#617084; --paper:#f6f8fb; --white:#fff;
+  --blue:#174a72; --blue2:#236b9b; --line:#dce4ec; --accent:#d6a85f;
+  --shadow:0 12px 36px rgba(23,35,51,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter, "Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:var(--blue2);text-decoration:none}
+a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:750;letter-spacing:.01em;color:var(--ink);white-space:nowrap}
+nav{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:.91rem;font-weight:600;color:#46566a}
+nav a:hover{color:var(--blue2);text-decoration:none}
+.hero{background:linear-gradient(120deg,#102d46,#174a72 62%,#236b9b);color:white}
+.hero-inner{max-width:1160px;margin:auto;padding:94px 24px 88px;display:grid;grid-template-columns:1.55fr .8fr;gap:56px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.76rem;font-weight:700;color:#c9dced}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.06;letter-spacing:-.045em;margin:15px 0 20px}
+.hero p{font-size:1.13rem;max-width:720px;color:#e2edf6;margin:0 0 28px}
+.hero-card{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);border-radius:18px;padding:28px}
+.hero-card .stat{font-size:2.1rem;font-weight:750;line-height:1.1}
+.hero-card p{font-size:.92rem;margin:8px 0 20px}
+.hero-card p:last-child{margin-bottom:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 18px;border-radius:7px;font-weight:700;font-size:.92rem}
+.btn-light{background:white;color:var(--blue)}
+.btn-outline{border:1px solid rgba(255,255,255,.6);color:white}
+main{max-width:1160px;margin:auto;padding:0 24px}
+section{padding:76px 0;border-bottom:1px solid var(--line)}
+.section-kicker{color:var(--blue2);font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:2rem;letter-spacing:-.03em;margin:8px 0 24px}
+h3{margin:0 0 9px;font-size:1.12rem}
+.lead{font-size:1.12rem;color:#405168;max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:23px;box-shadow:var(--shadow)}
+.card p{color:var(--muted);margin:0}
+.tag{display:inline-block;background:#eaf1f7;color:var(--blue);padding:4px 9px;border-radius:4px;font-size:.76rem;font-weight:700;margin:4px 5px 0 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.timeline{border-left:2px solid #cbd8e4;padding-left:22px;margin:22px 0}
+.entry{position:relative;margin:0 0 26px}
+.entry:before{content:"";position:absolute;left:-29px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.entry .date{font-size:.82rem;color:var(--blue2);font-weight:750}
+.entry p{margin:5px 0 0;color:var(--muted)}
+.pub{padding:18px 0;border-bottom:1px solid var(--line)}
+.pub:last-child{border-bottom:0}
+.pub-title{font-weight:700;color:var(--ink)}
+.pub-meta{font-size:.9rem;color:var(--muted);margin-top:4px}
+.note{background:#fff8eb;border-left:3px solid var(--accent);padding:13px 16px;color:#6b5737;border-radius:0 7px 7px 0;font-size:.9rem}
+footer{background:#102d46;color:#dbe7f1;padding:34px 24px}
+.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:white}
+.small{font-size:.88rem;color:var(--muted)}
+@media(max-width:800px){
+ .hero-inner{grid-template-columns:1fr;padding-top:68px;gap:30px}
+ .grid{grid-template-columns:1fr 1fr}
+ .two-col{grid-template-columns:1fr}
+ nav{gap:10px}
+ nav a{font-size:.82rem}
+}
+@media(max-width:540px){
+ .nav{align-items:flex-start;flex-direction:column}
+ nav{justify-content:flex-start}
+ .grid{grid-template-columns:1fr}
+ section{padding:55px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home">MOHAMED ABID</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#cv">CV</a><a href="#research">Research</a>
+      <a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Researcher · Group Leader · Technology Developer</div>
+      <h1>Dr Mohamed Abid</h1>
+      <p>Intelligent Sensing Systems | Industrial AI for Infrastructure Monitoring | Data-Driven Operations</p>
+      <div class="actions">
+        <a class="btn btn-light" href="#research">Explore my research</a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="stat">20+ years</div><p>Research and academic experience across materials science, sensing and applied AI.</p>
+      <div class="stat">75+ publications</div><p>Peer-reviewed research across interdisciplinary scientific fields.</p>
+      <div class="stat">Sensors → AI → Action</div><p>Connecting physical measurements to interpretable models and operational decisions.</p>
+    </aside>
+  </div>
+</div>
+
+<main>
+<section id="about">
+  <div class="section-kicker">Profile</div><h2>About me</h2>
+  <p class="lead">I am a physicist and research leader working at the intersection of advanced materials, intelligent sensing systems and data-driven technologies. My work connects the physics of sensing materials and devices with signal analysis, machine learning and practical monitoring applications.</p>
+  <div class="grid">
+    <article class="card"><h3>Scientific foundations</h3><p>Surface science, catalysis, nanotechnology, 2D materials, spintronics and optoelectronic devices.</p></article>
+    <article class="card"><h3>Intelligent sensing</h3><p>Gas sensing, sensor systems, signal interpretation, device physics and infrastructure monitoring.</p></article>
+    <article class="card"><h3>AI and data analysis</h3><p>Interpretable machine learning, neural networks, compressed sensing, dimensionality reduction and time-series analysis.</p></article>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="section-kicker">Experience</div><h2>Curriculum vitae</h2>
+  <div class="two-col">
+    <div>
+      <h3>Professional experience</h3>
+      <div class="timeline">
+        <div class="entry"><div class="date">09/2022 – Present</div><strong>Group Leader / Senior Scientist</strong><p>Beijing Institute of Technology — research in optoelectronics, sensing systems and AI-enabled analysis.</p></div>
+        <div class="entry"><div class="date">2010 – 2022</div><strong>Associate Professor</strong><p>King Saud University / Saudi Aramco research activities — gas sensing, nanotechnology and applied research.</p></div>
+        <div class="entry"><div class="date">2009 – 2012</div><strong>Group Leader</strong><p>École Polytechnique Fédérale de Lausanne (EPFL).</p></div>
+        <div class="entry"><div class="date">2007 – 2009</div><strong>Research appointment</strong><p>CRANN, Trinity College Dublin.</p></div>
+      </div>
+    </div>
+    <div>
+      <h3>Expertise</h3>
+      <p>Interdisciplinary research leadership, international collaborations, technology development, research funding and supervision of doctoral and postdoctoral researchers.</p>
+      <p><strong>Research areas</strong></p>
+      <span class="tag">2D materials</span><span class="tag">Gas sensors</span><span class="tag">Industrial AI</span>
+      <span class="tag">Optoelectronics</span><span class="tag">Machine learning</span><span class="tag">Nanotechnology</span>
+      <p style="margin-top:24px"><a class="btn" style="background:#174a72;color:white" href="cv.pdf" download>Download full CV (add cv.pdf)</a></p>
+      <p class="small">Place your PDF CV in the same folder as this website and name it <code>cv.pdf</code>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="section-kicker">Scientific work</div><h2>Research</h2>
+  <p class="lead">My research approach follows a connected pathway: understand the sensing mechanism, extract meaningful information from the signal, and translate it into a useful decision.</p>
+  <div class="grid">
+    <article class="card"><h3>Advanced sensing materials</h3><p>Functional materials and 2D systems for chemical and physical sensing, with emphasis on structure–property relationships and surface interactions.</p></article>
+    <article class="card"><h3>Device physics and optoelectronics</h3><p>Field-effect devices, heterostructures, photodetection and the relationship between device architecture and measured response.</p></article>
+    <article class="card"><h3>AI-enabled monitoring</h3><p>Data-driven analysis of complex sensor signals for detection, classification, interpretation and predictive monitoring.</p></article>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="section-kicker">Selected output</div><h2>Publications</h2>
+  <p class="lead">A selection of peer-reviewed publications. Replace the sample entries below with your chosen papers and DOI links.</p>
+  <div class="card">
+    <div class="pub"><div class="pub-title">[Publication title — add your selected paper]</div><div class="pub-meta">Authors · Journal · Year · <a href="#">DOI / Publisher link</a></div></div>
+    <div class="pub"><div class="pub-title">[Publication title — add your selected paper]</div><div class="pub-meta">Authors · Journal · Year · <a href="#">DOI / Publisher link</a></div></div>
+    <div class="pub"><div class="pub-title">[Publication title — add your selected paper]</div><div class="pub-meta">Authors · Journal · Year · <a href="#">DOI / Publisher link</a></div></div>
+    <div class="pub"><div class="pub-title">[Publication title — add your selected paper]</div><div class="pub-meta">Authors · Journal · Year · <a href="#">DOI / Publisher link</a></div></div>
+  </div>
+  <p style="margin-top:18px"><a href="#" target="_blank" rel="noopener">Google Scholar profile →</a> <span class="small">(replace # with your profile URL)</span></p>
+</section>
+
+<section id="projects">
+  <div class="section-kicker">Translation and impact</div><h2>Projects & innovation</h2>
+  <div class="grid">
+    <article class="card"><h3>Intelligent gas sensing</h3><p>Sensor platforms and analytical approaches for trace-gas detection and complex gas-mixture interpretation.</p></article>
+    <article class="card"><h3>Infrastructure monitoring</h3><p>AI-enabled analysis and predictive approaches for industrial assets and operational systems.</p></article>
+    <article class="card"><h3>Educational technology</h3><p>Development of AI-supported educational platforms and specialised digital tools.</p></article>
+  </div>
+  <p class="note" style="margin-top:22px">Project descriptions, funding figures, partner names and logos should be added only where disclosure is permitted.</p>
+</section>
+
+<section id="contact">
+  <div class="section-kicker">Connect</div><h2>Contact</h2>
+  <p class="lead">For research collaborations, academic opportunities, invited talks and technology partnerships, please get in touch.</p>
+  <p><strong>Email:</strong> <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a></p>
+  <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">Add your LinkedIn profile</a></p>
+  <p><strong>Location / affiliation:</strong> Add your preferred current institutional contact details.</p>
+</section>
+</main>
+
+<footer><div class="footer-inner">
+  <div>© <span id="year"></span> Dr Mohamed Abid. All rights reserved.</div>
+  <div><a href="#home">Back to top ↑</a></div>
+</div></footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
 </html>
